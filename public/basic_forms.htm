@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic forms in HTML</title>
+    </head>
+    <body>
+        <center><h1><u>Basic form with all the elements</u></h1></center>
+        <form>
+            <table align="center">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name in capitals"></td>
+            </tr>
+            <tr>
+                <td><label for="reg.no">Registration number</label></td>
+                <td><input type="text" name="regno" id="reg.no"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Mail ID</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter mail"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Year pursuing</td>
+                <td><input type="number" min="1" max="4"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="M">Male<br>
+                    <input type="radio" name="gender" value="F">Female </td>
+            </tr>
+            <tr>
+                <td><input type="hidden" value="77000"></td>
+            </tr>
+            <tr>
+                <td>Programming languages known</td>
+                <td><input type="checkbox" for="c" name="C" value="C Lang">C
+                <br>
+                <input type="checkbox" id="java" name="Java" value="Java Lang">Java
+                <br>
+                <input type="checkbox" id="python" name="python" value="python Lang">Python
+                <br>
+                <input type="checkbox" id="R" name="R" value="R Lang">R
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mnth">Month you joined</label></td>
+                <td><input type="month" name="selectJoinedMonth" id="mnth"></td>
+            </tr>
+            <tr>
+                <td><label for="week">Week you joined</label></td>
+                <td><input type="week" name="selectJoinedWeek" id="week"></td>
+            </tr>
+            <tr>
+                <td><label for="time">Time you joined</label></td>
+                <td><input type="time" name="Time" id="time"></td>
+            </tr>
+            <tr>
+                <td>Select hostel</td>
+                <td><select>
+                    <option value="-1">select hostel name</option>
+                    <option value="VGM">Green meadows</option>
+                    <option value="Neelima">Neelima</option>
+                    <option value="narmada">Narmada</option>
+                    <option value="vydehi">Vydehi</option>
+                    <option value="Rajeswari">Rajeswari</option>
+                    <option value="Rajyalakshmi">Rajyalakshmi</option>  
+                    <option value="praveena">Praveena</option>   
+                    </select>                                 
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="birthtime">Date of Birth with time</label></td>
+                <td><input type="datetime-local" name="Time" id="birthtime"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="range" min="16" max="22" value="18"></td>
+            </tr>
+            <tr>
+                <td>Favuorite color</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td>About yourself</td>
+                <td><textarea rows = "5" cols = "50" name = "description">Description:</textarea></td>
+            </tr>
+            <tr>
+                <td><label name="url" for="website"></label>Your website URL</td>
+                <td><input type="url" name="url" id="website"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type = "reset" name = "reset"  value = "Reset">
+                    <input type = "submit" name = "submit" value = "Submit">
+                </td>
+            </tr>
+            </table>
+        </form>
+    </body>
+</html>
